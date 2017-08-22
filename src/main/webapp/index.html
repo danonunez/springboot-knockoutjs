@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>SpringBoot + Knockout.js</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="assets/plugins/bootstrap-4.0.0-beta/bootstrap.min.css">
+    </head>
+    <body>
+        <div class="container">
+            <h1>Hello World with SpringBoot + Knockout.js!</h1>
+            
+            <table class="table table-condensed">
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Apellido</th>
+                    </tr>
+                </thead>
+                <tbody data-bind="foreach: dummies">
+                    <tr>
+                        <td><span data-bind="text: nombre"></span></td>
+                        <td><span data-bind="text: apellido"></span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+        <!-- Bootstrap core JavaScript
+        ================================================== -->
+        <!-- Placed at the end of the document so the pages load faster -->
+        <script src="assets/plugins/jquery-3.2.1/jquery.min.js"></script>
+        <script src="assets/plugins/popper-1.11.0/popper.min.js"></script>
+        <script src="assets/plugins/bootstrap-4.0.0-beta/bootstrap.min.js"></script>
+        <script type="text/javascript" src="assets/plugins/knockout-3.4.2/knockout-min.js"></script>
+        <script type='text/javascript' src='scripts/dummy.js'></script>
+    </body>
+</html>
